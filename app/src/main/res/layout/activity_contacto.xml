@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityContacto"
+    android:background="#858282">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include android:id="@+id/miActionBar"
+            layout="@layout/actionbar">
+        </include>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#ffff"
+            android:outlineSpotShadowColor="#ffff"
+            android:textColorHint="#ffff"
+            android:outlineAmbientShadowColor="#fff"
+
+
+            android:hint="Nombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:textColorLink="#ffff"
+                android:textColorHighlight="#ffff"
+                android:shadowColor="#ffff"
+                android:textColorHint="#ffff"
+                android:textColor="#ffff"
+
+                android:layout_height="76dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            app:boxStrokeColor="#ffff"
+            android:outlineSpotShadowColor="#ffff"
+            android:textColorHint="#ffff"
+            android:outlineAmbientShadowColor="#fff"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+
+                android:layout_height="76dp"
+
+                android:textColorLink="#ffff"
+                android:textColorHighlight="#ffff"
+                android:shadowColor="#ffff"
+                android:textColorHint="#ffff"
+                android:textColor="#ffff"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mensaje"
+            app:boxStrokeColor="#ffff"
+            android:outlineSpotShadowColor="#ffff"
+            android:textColorHint="#ffff"
+            android:outlineAmbientShadowColor="#fff">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+
+                android:layout_height="181dp"
+                android:textColorLink="#ffff"
+                android:textColorHighlight="#ffff"
+                android:shadowColor="#ffff"
+                android:textColorHint="#ffff"
+                android:textColor="#ffff"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="401dp"
+            android:layout_height="317dp"
+            android:layout_gravity="center"
+            android:text="Enviar"
+            android:theme="@style/MyButton"
+            android:id="@+id/btnEnviarContacto"
+            android:background="@drawable/btn_uno"
+            android:textColor="#ffff"
+
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

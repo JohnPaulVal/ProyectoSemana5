@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    android:background="@color/colorBarra"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+    >
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+
+    android:src="@drawable/huella"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Petagram"
+        android:fontFamily="casual"
+        android:textSize="35dp"
+
+        />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/topcinco"
+
+    android:background="#00000000"
+    android:paddingLeft="40dp"
+    android:onClick="irSegundaActividad"/>
+
+</androidx.appcompat.widget.Toolbar>
